@@ -47,7 +47,7 @@ public class CloudCrafter : MonoBehaviour {
 		foreach (GameObject cloud in cloudInstances) {
 			float scaleVal = cloud.transform.localScale.x;
 			Vector3 cPos = cloud.transform.position;
-			cPos.x  = cPos.x + (scaleVal * Time.deltaTime *cloudSpeedMult);
+			cPos.x  = cPos.x - (scaleVal * Time.deltaTime *cloudSpeedMult);
 			if(cPos.x <= cloudPosMin.x) {
 				cPos.x = cloudPosMax.x; }
 			cloud.transform.position = cPos;

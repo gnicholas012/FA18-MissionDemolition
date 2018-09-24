@@ -50,11 +50,11 @@ public class Cloud : MonoBehaviour {
 	//		Restart ();
 	//	}
 	}
-			void Restart () {
-				foreach (GameObject sp in spheres){
-					Destroy(sp);
-				}
-		Start();
+	void Restart () {
+	   	foreach (GameObject sp in spheres){
+			Destroy(sp);
+	    }
+	    Start();
 
-}
+    }
 }
